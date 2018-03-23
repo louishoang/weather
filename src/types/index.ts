@@ -7,3 +7,12 @@ export interface City {
   temp: number;
   description?: string | null ;
 }
+
+export interface FetchState<T> {
+  readonly data: T | null;
+  readonly error: string | null;
+}
+
+export interface StoreState {
+  readonly cities:  FetchState<City[]>;
+}

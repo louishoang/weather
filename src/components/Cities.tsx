@@ -1,13 +1,17 @@
 import * as React from 'react';
+import { City } from '../types';
 
-class Cities extends React.Component {
-  render() {
-    return (
-      <div>
-        List of Cities
-      </div>
-    );
-  }
+export interface Props {
+  cities: City[];
 }
+
+const Cities = () => {
+  debugger;
+  return (
+    <div>
+      List of Cities
+    </div>
+  );
+};
 
 export default Cities;
